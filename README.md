@@ -107,6 +107,6 @@ The `<Gear>` component additionally takes any props that `<path>` does. The `<Ge
 
 [MIT](LICENSE)
 
-## Like this utility? Support my hobby!
+## Like this library? Support my hobby!
 
 [PayPal donation link](https://paypal.me/seanchenpiano?locale.x=en_US)
