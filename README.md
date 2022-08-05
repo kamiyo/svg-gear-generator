@@ -2,7 +2,20 @@
 
 ![npm shield](https://img.shields.io/npm/v/svg-gear-generator)
 
-This library allows you to generate an SVG of a simple gear. This does NOT generate a technically accurate gear, with things like correct curved involutes and undercuts, etc. Useful for custom settings icons, (and generating stars!). There are three possible uses:
+This library allows you to generate an SVG of a simple gear. This does NOT generate a technically accurate gear, with things like correct curved involutes and undercuts, etc. Useful for custom settings icons, (and generating stars!).
+
+## Installation
+```
+yarn add svg-gear-generator
+```
+or
+```
+npm install svg-gear-generator --save
+```
+
+## Usage
+
+There are three possible uses:
 
 1. `generateGear(args)`: This generates a `d` attribute for use with `<path>`. Used internally by the following components.
 2. `<Gear>` component: For use with React. Returns a `<path>` element.
@@ -19,7 +32,7 @@ The `<Gear>` component additionally takes any props that `<path>` does. The `<Ge
 * `axleRadius: number`: Radius of the axle.
 * `axleProps: React.SVGAttributes<SVGPathElement>`: Any additional props to be passed to the `<circle>` element. If undefined, will copy any props specified on the `<GearWithAxle>` component onto the `<circle>` element.
 
-## Examples:
+## Examples
 
 ### Gear with 9 teeth and axle.
 
