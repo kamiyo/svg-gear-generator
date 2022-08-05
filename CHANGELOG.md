@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+### [1.1.3](https://github.com/kamiyo/svg-gear-generator/compare/v1.1.2...v1.1.3) (2022-08-05)
+
+
+### Bug Fixes
+
+* **repo:** add installation to README ([8517c04](https://github.com/kamiyo/svg-gear-generator/commit/8517c0458d96f36dfe9b1baed623daf534a06b9f))
+
 ### [1.1.2](https://github.com/kamiyo/svg-gear-generator/compare/v1.1.1...v1.1.2) (2022-08-05)
 
 
