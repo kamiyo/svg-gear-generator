@@ -1,0 +1,23 @@
+{
+    "extends": "../tsconfig-base.json",
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "../dist",
+        "moduleResolution": "node",
+        "module": "es6",
+        "noImplicitAny": true,
+        "target": "es6",
+        "outDir": "../dist",
+        "esModuleInterop": true,
+        "composite": true,
+        "rootDir": "../src",
+        "sourceMap": true
+    },
+    "types": [
+        "react",
+    ],
+    "include": [
+        "./**/*.ts",
+        "./**/*.tsx"
+    ]
+}
