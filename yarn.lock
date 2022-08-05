@@ -3060,6 +3060,11 @@ __metadata:
     trash-cli: ^5.0.0
     tslib: ^2.4.0
     typescript: ^4.7.4
+  dependenciesMeta:
+    "@types/react":
+      optional: true
+    react:
+      optional: true
   languageName: unknown
   linkType: soft
 

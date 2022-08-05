@@ -1,22 +1,27 @@
 import { Coordinate } from "./Coordinate";
 
 export interface gearGeneratorParams {
-    radii: [number, number];
-    numberOfSpokes: number;
+    radii: {
+        outer: number;
+        inner: number;
+    };
+    numTeeth: number;
     toothThicknessPercent?: number;
 }
 
 export const generateGear = (props: gearGeneratorParams) => {
     const {
-        radii: [outerRadius, innerRadius],
-        numberOfSpokes,
+        radii: {
+            inner: innerRadius, outer: outerRadius
+        },
+        numTeeth,
         toothThicknessPercent = 0.5
     } = props;
-    if (!Number.isInteger(numberOfSpokes)) {
+    if (!Number.isInteger(numTeeth)) {
         throw Error('numberOfSpokes must be integer');
     }
     const current = new Coordinate(1, 0);
-    const circularPitch = 2 * Math.PI / numberOfSpokes;
+    const circularPitch = 2 * Math.PI / numTeeth;
     const topAndBottomLands = outerRadius + innerRadius;
     const topPitch = toothThicknessPercent * (innerRadius / topAndBottomLands) * circularPitch;
     const bottomPitch = toothThicknessPercent * (outerRadius / topAndBottomLands) * circularPitch;
@@ -28,7 +33,7 @@ export const generateGear = (props: gearGeneratorParams) => {
     console.log(current.length());
 
 
-    for (let i = 0; i < numberOfSpokes; i++) {
+    for (let i = 0; i < numTeeth; i++) {
 
         // write starting point of this loop, unless first iter
         if (i !== 0) {
