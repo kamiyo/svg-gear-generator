@@ -1,5 +1,7 @@
 # svg-gear-generator
 
+![npm shield](https://img.shields.io/npm/v/svg-gear-generator)
+
 This library allows you to generate an SVG of a simple gear. This does NOT generate a technically accurate gear, with things like correct curved involutes and undercuts, etc. Useful for custom settings icons, (and generating stars!). There are three possible uses:
 
 1. `generateGear(args)`: This generates a `d` attribute for use with `<path>`. Used internally by the following components.
