@@ -30,9 +30,6 @@ export const generateGear = (props: gearGeneratorParams) => {
     const firstPoint = current.scale(outerRadius);
     let d = `M${firstPoint}`;
 
-    console.log(current.length());
-
-
     for (let i = 0; i < numTeeth; i++) {
 
         // write starting point of this loop, unless first iter
