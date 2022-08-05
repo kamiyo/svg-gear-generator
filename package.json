@@ -1,6 +1,6 @@
 {
   "name": "svg-gear-generator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Generate an SVG of a gear!",
   "main": "dist/svg-gear-generator.cjs",
   "module": "dist/svg-gear-generator.mjs",
