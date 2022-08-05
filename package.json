@@ -16,6 +16,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamiyo/svg-gear-generator"
+  },
   "keywords": [
     "react",
     "gear",
